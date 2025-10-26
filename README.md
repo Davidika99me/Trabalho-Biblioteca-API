@@ -6,17 +6,17 @@
 
 ## 2. Descrição Resumida 
 
-Este projeto consiste na criação de uma API (Application Programming Interface) RESTful para gerenciar o funcionamento de uma biblioteca. A API permite o cadastro e a consulta de autores, livros, usuários e o controle de empréstimos[cite: 8].
+Este projeto consiste na criação de uma API (Application Programming Interface) RESTful para gerenciar o funcionamento de uma biblioteca. A API permite o cadastro e a consulta de autores, livros, usuários e o controle de empréstimos.
 
 A persistência dos dados é feita utilizando um banco de dados não relacional, o **MongoDB**, através da biblioteca **Mongoose**. O servidor web é construído com **Fastify**, focando em performance e utilizando o padrão **ES Modules** (`type: "module"`).
 
 ## 3. Tecnologias Utilizadas 
 
 * **Node.js**: Ambiente de execução.
-* **Fastify**: Framework web para construção das rotas da API[cite: 11].
-* **Mongoose**: Biblioteca de modelagem para comunicação com o MongoDB[cite: 12].
-* **MongoDB**: Banco de dados não relacional[cite: 8].
-* **Dotenv**: Módulo para gerenciar variáveis de ambiente[cite: 13].
+* **Fastify**: Framework web para construção das rotas da API.
+* **Mongoose**: Biblioteca de modelagem para comunicação com o MongoDB.
+* **MongoDB**: Banco de dados não relacional.
+* **Dotenv**: Módulo para gerenciar variáveis de ambiente.
 
 ## 4. Estrutura de Pastas e Arquivos
 
@@ -70,13 +70,13 @@ O projeto segue uma estrutura modular para facilitar a manutenção e organizaç
 
 | Recurso | Método | Rota | Descrição |
 | :--- | :--- | :--- | :--- |
-| **Usuários** | `POST` | `/api/users` | Cadastra um novo usuário. O nome não pode ser duplicado. |
+| **Usuários** | `POST` | `/users` | Cadastra um novo usuário. O nome não pode ser duplicado. |
 | | `GET` | `/api/users` | Lista todos os usuários cadastrados. |
-| **Autores** | `POST` | `/api/authors` | Cadastra um novo autor. O nome não pode ser duplicado. |
+| **Autores** | `POST` | `/authors` | Cadastra um novo autor. O nome não pode ser duplicado. |
 | | `GET` | `/api/authors` | Lista todos os autores cadastrados. |
-| **Livros** | `POST` | `/api/books` | Cadastra um novo livro, associando-o a um autor existente. |
-| | `GET` | `/api/books` | Lista todos os livros cadastrados. |
-| **Empréstimos** | `POST` | `/api/loans` | Cria um registro de empréstimo. A requisição requer o ID do livro e do usuário. |
+| **Livros** | `POST` | `/books` | Cadastra um novo livro, associando-o a um autor existente. |
+| | `GET` | `/books` | Lista todos os livros cadastrados. |
+| **Empréstimos** | `POST` | `/loans` | Cria um registro de empréstimo. A requisição requer o ID do livro e do usuário. |
 
 ## 7. Regra de Negócio de Empréstimo
 
