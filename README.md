@@ -71,9 +71,9 @@ O projeto segue uma estrutura modular para facilitar a manutenção e organizaç
 | Recurso | Método | Rota | Descrição |
 | :--- | :--- | :--- | :--- |
 | **Usuários** | `POST` | `/users` | Cadastra um novo usuário. O nome não pode ser duplicado. |
-| | `GET` | `/api/users` | Lista todos os usuários cadastrados. |
+| | `GET` | `/users` | Lista todos os usuários cadastrados. |
 | **Autores** | `POST` | `/authors` | Cadastra um novo autor. O nome não pode ser duplicado. |
-| | `GET` | `/api/authors` | Lista todos os autores cadastrados. |
+| | `GET` | `/authors` | Lista todos os autores cadastrados. |
 | **Livros** | `POST` | `/books` | Cadastra um novo livro, associando-o a um autor existente. |
 | | `GET` | `/books` | Lista todos os livros cadastrados. |
 | **Empréstimos** | `POST` | `/loans` | Cria um registro de empréstimo. A requisição requer o ID do livro e do usuário. |
